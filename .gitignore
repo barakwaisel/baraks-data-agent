@@ -1,0 +1,16 @@
+# Secrets and machine-local state — never commit these
+*.key
+*.pem
+*.json.key
+service-account*.json
+.env
+.env.*
+
+# OpenClaw runtime state (lives in ~/.openclaw, but just in case anything is copied here)
+credentials/
+sessions/
+state/
+
+# macOS noise
+.DS_Store
+workspace/openclaw-workspace-state.json
